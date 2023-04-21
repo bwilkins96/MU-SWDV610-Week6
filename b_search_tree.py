@@ -103,11 +103,11 @@ class BinarySearchTree:
             yield node
 
 if __name__ == '__main__':
-    b = BinarySearchTree(10)
-    b.insert(5)
-    b.insert(2)
-    b.insert(3)
-    b.insert(15)
+    bst = BinarySearchTree(10)
+    bst.insert(5)
+    bst.insert(2)
+    bst.insert(3)
+    bst.insert(15)
 
-    for node in b:
+    for node in bst:
         print(node._val)                  # -> 10, 5, 2, 3, 15
