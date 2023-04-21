@@ -7,10 +7,10 @@ from b_search_tree import BinarySearchTree
 from b_heap_tree import BinaryHeapTree
 
 def main():
-    #int_list = random_int_list()
+    int_list = random_int_list()
 
     # This list is for demonstration
-    int_list = [380, 266, 475, 302, 783, 332, 936, 298, 23, 656]
+    #int_list = [380, 266, 475, 302, 783, 332, 936, 298, 23, 656]
     
     print('List:', int_list)
     input('Press <enter> to continue')
@@ -24,6 +24,11 @@ def main():
     print('\nBinary Search Tree, Preorder Traversal:')
     for node in b_search_tree: 
         print(node.key(), end=' -> ')
+
+    print('\n\nBinary Search Tree, Breadth-First Traversal:')
+    for node in b_search_tree.breadth_first(b_search_tree.get_root()):
+        print(node.key(), end=' -> ')
+    print()
 
 if __name__ == '__main__': main()
 
