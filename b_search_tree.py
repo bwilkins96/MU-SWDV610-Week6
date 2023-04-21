@@ -5,7 +5,7 @@ class BinarySearchTree:
     """A binary search tree class designed for Maryville University"""
 
     class _Node:
-        """Node class containing a value and parent, left, and right node pointers"""
+        """Node class containing a key, value pair and parent, left, and right node pointers"""
         
         def __init__(self, key, val, parent=None, left=None, right=None):
             self._key = key

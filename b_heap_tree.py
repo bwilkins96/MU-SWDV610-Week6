@@ -67,6 +67,9 @@ class BinaryHeapTree:
         while i > 0:
             self._perc_down(i)
             i -= 1
+
+    def __repr__(self):
+        return str(self._heap_list)
     
 if __name__ == '__main__':
     bht = BinaryHeapTree([9,5,6,2,3])
