@@ -82,6 +82,13 @@ class BinarySearchTree:
                     current._right = self._Node(key, val, current)
                     inserted = True
 
+    def get(self, key):
+        for node in self:
+            if node.key() == key:
+                return node.val()
+        
+        return None
+
     def build_search_tree(self, key_lst, val_lst=None):
         """
         Inserts the values of key_lst with corresponding values 
@@ -121,6 +128,12 @@ class BinarySearchTree:
     
     def __setitem__(self, key, val):
         self.put(key, val)
+
+    def __getitem__(self, key):
+        return self.get(key)
+    
+    def __contains__(self, key):
+        return bool(self.get(key))
 
 if __name__ == '__main__':
     bst = BinarySearchTree(10, 'a')

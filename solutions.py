@@ -10,7 +10,7 @@ def main():
     int_list = random_int_list()
 
     # This list is for demonstration
-    #int_list = [380, 266, 475, 302, 783, 332, 936, 298, 23, 656]
+    # int_list = [380, 266, 475, 302, 783, 332, 936, 298, 23, 656]
     
     print('List:', int_list)
     input('Press <enter> to continue')
